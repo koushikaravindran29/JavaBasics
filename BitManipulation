@@ -1,0 +1,21 @@
+
+public class Main
+{
+	public static void main(String[] args) {
+	    int n=5;
+  int k[]=new int[n+1];
+         for(int i=0;i<=n;i++){
+            String s="";
+            while(i>=0){
+                int r=i%2;
+                s=r+s;
+                i=i/2;
+            }
+            int m=Integer.parseInt(s);
+            k[i]=m;
+         }
+       for(int z:k){
+           System.out.println(z);
+       }
+	}
+}
